@@ -60,9 +60,9 @@ namespace FInal_Project
             return flightMan.viewFlights();
         }
         
-        public string viewFlight(string flightNum)
+        public string viewFlight(int flightID)
         {
-            return flightMan.viewFlight(flightNum);
+            return flightMan.viewFlight(flightID);
         }
 
         public string viewBooking(int id)

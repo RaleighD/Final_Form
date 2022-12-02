@@ -416,9 +416,9 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(16, 18);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(72, 13);
+            this.label18.Size = new System.Drawing.Size(46, 13);
             this.label18.TabIndex = 0;
-            this.label18.Text = "Flight Number";
+            this.label18.Text = "Flight ID";
             // 
             // tabPage7
             // 

@@ -197,7 +197,7 @@ namespace FInal_Project
 
         private void button9_Click(object sender, EventArgs e) // View Particular Flight Button
         {
-            ViewFlight_TxtBox.Text = coord.viewFlight(textBox17.Text);
+            ViewFlight_TxtBox.Text = coord.viewFlight(int.Parse(textBox17.Text));
         }
 
         private void ViewFlight_TxtBox_TextChanged(object sender, EventArgs e)

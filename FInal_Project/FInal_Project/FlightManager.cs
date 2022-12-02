@@ -118,11 +118,11 @@ namespace FInal_Project
             return s;
         }
 
-        public string viewFlight(string flightNum)
+        public string viewFlight(int flightID)
         {
             for (int i = 0; i < numFlights; i++)
             {
-                if (flightList[i].getFlightNum() == flightNum)
+                if (flightList[i].getID() == flightID)
                 {
                     return flightList[i].ToString();
                 }  
