@@ -111,7 +111,7 @@ namespace FInal_Project
                 "\nAircraft: " + aircraft + " " +
                 "\nFlight Capacity: " + capacity + " " +
                 "\nDuration: " + duration + " minutes" + " " +
-                "\nPassenger List: \n" + viewPassengers() "                      ";
+                "\nPassenger List: \n" + viewPassengers() +  "                      ";
         }
 
     }
