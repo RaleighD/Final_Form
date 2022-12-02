@@ -35,7 +35,6 @@ namespace FInal_Project
             Flight f = flightMan.search(flightID);
             bookMan.addBooking(c, f);
             return true;
-
         }
 
         public bool addFlight(string flightNum, string date, string origin, string destination, string aircraft, int capacity, int duration)

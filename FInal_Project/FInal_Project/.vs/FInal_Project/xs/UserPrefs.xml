@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{FEB013CB-58FC-45CA-B18A-F631A5D51A93}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FlightManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Flight.cs">
     <Files>
-      <File FileName="Coordinator.cs" Line="37" Column="25" />
-      <File FileName="Form1.cs" Line="1" Column="1" />
-      <File FileName="FlightManager.cs" Line="1" Column="1" />
+      <File FileName="Coordinator.cs" Line="19" Column="40" />
+      <File FileName="Form1.cs" Line="260" Column="10" />
+      <File FileName="FlightManager.cs" Line="39" Column="29" />
+      <File FileName="Flight.cs" Line="106" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FInal_Project" expanded="True">
             <Node name="FInal_Project" expanded="True">
-              <Node name="FlightManager.cs" selected="True" />
+              <Node name="Flight.cs" selected="True" />
             </Node>
           </Node>
         </State>
