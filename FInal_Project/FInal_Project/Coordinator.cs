@@ -21,8 +21,12 @@ namespace FInal_Project
 
         public bool addCustomer(string firstName, string lastName, string phoneNum)
         {
-            cusMan.addCustomer(firstName, lastName, phoneNum);
-            return true;
+            if (firstName != null && lastName != null && phoneNum !=)
+            {
+                cusMan.addCustomer(firstName, lastName, phoneNum);
+                return true;
+            }
+            return false;
         }
 
         public bool addBooking(int customerID, int flightID)

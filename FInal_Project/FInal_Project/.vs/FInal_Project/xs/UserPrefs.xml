@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{FEB013CB-58FC-45CA-B18A-F631A5D51A93}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Coordinator.cs">
+    <Files>
+      <File FileName="Coordinator.cs" Line="24" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FInal_Project" expanded="True">
+            <Node name="FInal_Project" expanded="True">
+              <Node name="Coordinator.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FInal__Project PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
