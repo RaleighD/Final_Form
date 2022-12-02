@@ -21,7 +21,7 @@ namespace FInal_Project
 
         public bool addCustomer(string firstName, string lastName, string phoneNum)
         {
-            if (firstName != null && lastName != null && phoneNum !=)
+            if (firstName != null && lastName != null && phoneNum != null)
             {
                 cusMan.addCustomer(firstName, lastName, phoneNum);
                 return true;
