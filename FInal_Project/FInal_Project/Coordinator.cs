@@ -46,7 +46,7 @@ namespace FInal_Project
             return true;
         }
 
-        public bool removeFlight(string id)
+        public bool removeFlight(int id)
         {
             flightMan.removeFlight(id);
             return true;
@@ -56,7 +56,7 @@ namespace FInal_Project
         {
             return flightMan.viewFlights();
         }
-
+        
         public string viewFlight(string flightNum)
         {
             return flightMan.viewFlight(flightNum);

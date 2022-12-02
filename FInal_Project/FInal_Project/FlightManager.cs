@@ -92,11 +92,11 @@ namespace FInal_Project
             return false;
         }
 
-        public void removeFlight(string flightNum)
+        public void removeFlight(int id)
         {
             for (int i = 0; i < numFlights; i++)
             {
-                if (flightList[i].getFlightNum() == flightNum && flightList[i].getNumPassengers() == 0)
+                if (flightList[i].getID() == id && flightList[i].getNumPassengers() == 0)
                 {
                     for (int x = i; x < (numFlights - 1); x++)
                     {

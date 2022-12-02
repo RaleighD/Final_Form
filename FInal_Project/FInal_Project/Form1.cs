@@ -207,6 +207,7 @@ namespace FInal_Project
 
         private void button10_Click(object sender, EventArgs e) // Delete Flight Submit
         {
+            coord.removeFlight(int.Parse(textBox18.Text));
             label23.Text = "Flight " + textBox18.Text + " successfuly deleted.";
         }
 
@@ -274,6 +275,9 @@ namespace FInal_Project
             
         }
 
-        
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -20,3 +20,14 @@ G:\Desktop\FInal_Project\FInal_Project\obj\Debug\FInal_Project.csproj.GenerateRe
 G:\Desktop\FInal_Project\FInal_Project\obj\Debug\FInal_Project.csproj.CoreCompileInputs.cache
 G:\Desktop\FInal_Project\FInal_Project\obj\Debug\FInal_Project.exe
 G:\Desktop\FInal_Project\FInal_Project\obj\Debug\FInal_Project.pdb
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.csproj.AssemblyReference.cache
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.csproj.SuggestedBindingRedirects.cache
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.Form1.resources
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.Properties.Resources.resources
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.csproj.GenerateResource.cache
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.csproj.CoreCompileInputs.cache
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.exe
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\obj\Debug\FInal_Project.pdb
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\bin\Debug\FInal_Project.exe.config
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\bin\Debug\FInal_Project.exe
+G:\Desktop\FInal_Project\Final_Form\FInal_Project\FInal_Project\bin\Debug\FInal_Project.pdb

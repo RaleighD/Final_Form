@@ -53,6 +53,7 @@
             this.FlightListSubmit = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.ViewFlight_TxtBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
@@ -65,17 +66,21 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.bookingMessage = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.ViewBookingBox = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.AddCustomerConfirm = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -84,6 +89,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.ViewCustomersBox = new System.Windows.Forms.TextBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -96,12 +102,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.ViewFlight_TxtBox = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.bookingMessage = new System.Windows.Forms.Label();
-            this.ViewBookingBox = new System.Windows.Forms.TextBox();
-            this.AddCustomerConfirm = new System.Windows.Forms.Label();
-            this.ViewCustomersBox = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -376,6 +376,15 @@
             this.tabPage6.Text = "View a Particular Flight";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // ViewFlight_TxtBox
+            // 
+            this.ViewFlight_TxtBox.Location = new System.Drawing.Point(67, 55);
+            this.ViewFlight_TxtBox.Multiline = true;
+            this.ViewFlight_TxtBox.Name = "ViewFlight_TxtBox";
+            this.ViewFlight_TxtBox.Size = new System.Drawing.Size(246, 59);
+            this.ViewFlight_TxtBox.TabIndex = 4;
+            this.ViewFlight_TxtBox.TextChanged += new System.EventHandler(this.ViewFlight_TxtBox_TextChanged);
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -449,6 +458,7 @@
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(100, 20);
             this.textBox18.TabIndex = 1;
+            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
             // 
             // label22
             // 
@@ -498,6 +508,14 @@
             this.tabPage8.UseVisualStyleBackColor = true;
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
+            // bookingMessage
+            // 
+            this.bookingMessage.AutoSize = true;
+            this.bookingMessage.Location = new System.Drawing.Point(116, 80);
+            this.bookingMessage.Name = "bookingMessage";
+            this.bookingMessage.Size = new System.Drawing.Size(0, 13);
+            this.bookingMessage.TabIndex = 6;
+            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(102, 96);
@@ -507,6 +525,14 @@
             this.button5.Text = "Submit";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(102, 51);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(103, 20);
+            this.textBox8.TabIndex = 4;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // textBox7
             // 
@@ -549,6 +575,16 @@
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "View a Booking";
             this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // ViewBookingBox
+            // 
+            this.ViewBookingBox.Location = new System.Drawing.Point(19, 58);
+            this.ViewBookingBox.Multiline = true;
+            this.ViewBookingBox.Name = "ViewBookingBox";
+            this.ViewBookingBox.ReadOnly = true;
+            this.ViewBookingBox.Size = new System.Drawing.Size(180, 207);
+            this.ViewBookingBox.TabIndex = 3;
+            this.ViewBookingBox.TextChanged += new System.EventHandler(this.ViewBookingBox_TextChanged);
             // 
             // button6
             // 
@@ -614,6 +650,14 @@
             this.tabPage10.TabIndex = 0;
             this.tabPage10.Text = "Add a Customer";
             this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // AddCustomerConfirm
+            // 
+            this.AddCustomerConfirm.AutoSize = true;
+            this.AddCustomerConfirm.Location = new System.Drawing.Point(75, 131);
+            this.AddCustomerConfirm.Name = "AddCustomerConfirm";
+            this.AddCustomerConfirm.Size = new System.Drawing.Size(0, 13);
+            this.AddCustomerConfirm.TabIndex = 7;
             // 
             // button1
             // 
@@ -691,6 +735,15 @@
             this.tabPage11.TabIndex = 1;
             this.tabPage11.Text = "View Customers";
             this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // ViewCustomersBox
+            // 
+            this.ViewCustomersBox.Location = new System.Drawing.Point(651, 56);
+            this.ViewCustomersBox.Multiline = true;
+            this.ViewCustomersBox.Name = "ViewCustomersBox";
+            this.ViewCustomersBox.ReadOnly = true;
+            this.ViewCustomersBox.Size = new System.Drawing.Size(180, 207);
+            this.ViewCustomersBox.TabIndex = 7;
             // 
             // splitter1
             // 
@@ -805,58 +858,6 @@
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 0;
             this.label7.Text = "Customer ID";
-            // 
-            // ViewFlight_TxtBox
-            // 
-            this.ViewFlight_TxtBox.Location = new System.Drawing.Point(67, 55);
-            this.ViewFlight_TxtBox.Multiline = true;
-            this.ViewFlight_TxtBox.Name = "ViewFlight_TxtBox";
-            this.ViewFlight_TxtBox.Size = new System.Drawing.Size(246, 59);
-            this.ViewFlight_TxtBox.TabIndex = 4;
-            this.ViewFlight_TxtBox.TextChanged += new System.EventHandler(this.ViewFlight_TxtBox_TextChanged);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(102, 51);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(103, 20);
-            this.textBox8.TabIndex = 4;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
-            // bookingMessage
-            // 
-            this.bookingMessage.AutoSize = true;
-            this.bookingMessage.Location = new System.Drawing.Point(116, 80);
-            this.bookingMessage.Name = "bookingMessage";
-            this.bookingMessage.Size = new System.Drawing.Size(0, 13);
-            this.bookingMessage.TabIndex = 6;
-            // 
-            // ViewBookingBox
-            // 
-            this.ViewBookingBox.Location = new System.Drawing.Point(19, 58);
-            this.ViewBookingBox.Multiline = true;
-            this.ViewBookingBox.Name = "ViewBookingBox";
-            this.ViewBookingBox.ReadOnly = true;
-            this.ViewBookingBox.Size = new System.Drawing.Size(180, 207);
-            this.ViewBookingBox.TabIndex = 3;
-            this.ViewBookingBox.TextChanged += new System.EventHandler(this.ViewBookingBox_TextChanged);
-            // 
-            // AddCustomerConfirm
-            // 
-            this.AddCustomerConfirm.AutoSize = true;
-            this.AddCustomerConfirm.Location = new System.Drawing.Point(75, 131);
-            this.AddCustomerConfirm.Name = "AddCustomerConfirm";
-            this.AddCustomerConfirm.Size = new System.Drawing.Size(0, 13);
-            this.AddCustomerConfirm.TabIndex = 7;
-            // 
-            // ViewCustomersBox
-            // 
-            this.ViewCustomersBox.Location = new System.Drawing.Point(651, 56);
-            this.ViewCustomersBox.Multiline = true;
-            this.ViewCustomersBox.Name = "ViewCustomersBox";
-            this.ViewCustomersBox.ReadOnly = true;
-            this.ViewCustomersBox.Size = new System.Drawing.Size(180, 207);
-            this.ViewCustomersBox.TabIndex = 7;
             // 
             // Form1
             // 
