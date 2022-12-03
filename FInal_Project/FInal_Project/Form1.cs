@@ -116,7 +116,8 @@ namespace FInal_Project
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
+            textBox20.Text = coord.viewCustomer(int.Parse(textBox5.Text));
+            textBox5.Clear();
         }
 
         private void label9_Click(object sender, EventArgs e)
