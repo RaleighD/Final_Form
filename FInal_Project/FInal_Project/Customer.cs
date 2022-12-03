@@ -56,11 +56,11 @@ namespace FInal_Project
 
         public override string ToString()
         {
-            return "Customer ID: " + getID() + 
-                "\nFirst Name: " + firstName +
-                "\nLast Name: " + lastName +
-                "\nPhone Number: " + phoneNum +
-                "\nNumber of Bookings: " + numBookings + "\n";
+            return "Customer ID: " + getID() + " | " +
+                "\nFirst Name: " + firstName + " | " +
+                "\nLast Name: " + lastName + " | " +
+                "\nPhone Number: " + phoneNum + " | " +
+                "\nNumber of Bookings: " + numBookings + "                   "; 
         }
     }
 }

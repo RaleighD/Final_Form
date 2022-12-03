@@ -26,12 +26,12 @@ namespace FInal_Project
 
         public override string ToString()
         {
-            return "Booking ID: " + bookingID +
-                "\nCustomer: " + passenger.getFirstName() + " " + passenger.getLastName() +
-                "\nFlight Number: " + flight.getFlightNum() +
-                "\nDate: " + flight.getDate() +
-                "\nOrigin: " + flight.getOrigin() +
-                "\nDestination: " + flight.getDestination() + "\n";
+            return "Booking ID: " + bookingID + " | " +
+                "\nCustomer: " + passenger.getFirstName() + " " + passenger.getLastName() + " | " +
+                "\nFlight Number: " + flight.getFlightNum() + " | " +
+                "\nDate: " + flight.getDate() + " | " +
+                "\nOrigin: " + flight.getOrigin() + " | " +
+                "\nDestination: " + flight.getDestination() + "                          ";
         }
     }
 }
