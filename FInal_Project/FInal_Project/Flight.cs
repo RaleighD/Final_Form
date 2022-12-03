@@ -103,14 +103,14 @@ namespace FInal_Project
 
         public override string ToString()
         {
-            return "\nFlight ID: " + flightID + " " +
-                "\nIATA Flight Number: " + flightNum + " " +
-                "\nDate: " + date + " " +
-                "\nOrigin: " + origin + " " +
-                "\nDestination: " + destination + " " +
-                "\nAircraft: " + aircraft + " " +
-                "\nFlight Capacity: " + capacity + " " +
-                "\nDuration: " + duration + " minutes" + " " +
+            return "\nFlight ID: " + flightID + " | " +
+                "\nIATA Flight Number: " + flightNum + " | " +
+                "\nDate: " + date + " | " +
+                "\nOrigin: " + origin + " | " +
+                "\nDestination: " + destination + " | " +
+                "\nAircraft: " + aircraft + " | " +
+                "\nFlight Capacity: " + capacity + " | " +
+                "\nDuration: " + duration + " minutes" + " | " +
                 "\nPassenger List: \n" + viewPassengers() +  "                      ";
         }
 
