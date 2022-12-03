@@ -102,6 +102,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.FlightSubmitResult = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -167,6 +169,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.FlightSubmitResult);
             this.tabPage4.Controls.Add(this.button7);
             this.tabPage4.Controls.Add(this.textBox16);
             this.tabPage4.Controls.Add(this.textBox15);
@@ -266,7 +269,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(23, 201);
+            this.label19.Location = new System.Drawing.Point(24, 205);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(47, 13);
             this.label19.TabIndex = 7;
@@ -720,6 +723,7 @@
             // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.textBox20);
             this.tabPage11.Controls.Add(this.ViewCustomersBox);
             this.tabPage11.Controls.Add(this.splitter1);
             this.tabPage11.Controls.Add(this.button3);
@@ -859,6 +863,23 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Customer ID";
             // 
+            // FlightSubmitResult
+            // 
+            this.FlightSubmitResult.AutoSize = true;
+            this.FlightSubmitResult.Location = new System.Drawing.Point(84, 226);
+            this.FlightSubmitResult.Name = "FlightSubmitResult";
+            this.FlightSubmitResult.Size = new System.Drawing.Size(0, 13);
+            this.FlightSubmitResult.TabIndex = 17;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(97, 56);
+            this.textBox20.Multiline = true;
+            this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
+            this.textBox20.Size = new System.Drawing.Size(187, 65);
+            this.textBox20.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -975,5 +996,7 @@
         private System.Windows.Forms.TextBox ViewBookingBox;
         private System.Windows.Forms.Label AddCustomerConfirm;
         private System.Windows.Forms.TextBox ViewCustomersBox;
+        private System.Windows.Forms.Label FlightSubmitResult;
+        private System.Windows.Forms.TextBox textBox20;
     }
 }

@@ -103,5 +103,7 @@ namespace FInal_Project
             return s;
         }
 
+        public string viewCustomer(int id)
+
     }
 }

@@ -135,6 +135,8 @@ namespace FInal_Project
             {
                 coord.addBooking(int.Parse(textBox7.Text), int.Parse(textBox8.Text));
                 bookingMessage.Text = "Booking successfully added.";
+                textBox7.Clear();
+                textBox8.Clear();
             }
             else bookingMessage.Text = "There was an error with your booking. Please try again.";
         }
@@ -176,8 +178,22 @@ namespace FInal_Project
 
         private void button7_Click(object sender, EventArgs e) // Add flight Submit on Click 
         {
-            coord.addFlight(textBox10.Text, textBox12.Text, textBox11.Text, textBox13.Text, textBox14.Text, 
-                int.Parse(textBox16.Text), int.Parse(textBox15.Text));
+            if (coord.addFlight(textBox10.Text, textBox12.Text, textBox11.Text, textBox13.Text, textBox14.Text,
+                int.Parse(textBox16.Text), int.Parse(textBox15.Text)))
+            {
+                FlightSubmitResult.Text = "Flight " + textBox10.Text + " successfully added";
+                textBox10.Clear();
+                textBox11.Clear();
+                textBox12.Clear();
+                textBox13.Clear();
+                textBox14.Clear();
+                textBox15.Clear();
+                textBox16.Clear();
+
+                
+            }
+
+
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e) // Date textBox
@@ -198,6 +214,7 @@ namespace FInal_Project
         private void button9_Click(object sender, EventArgs e) // View Particular Flight Button
         {
             ViewFlight_TxtBox.Text = coord.viewFlight(int.Parse(textBox17.Text));
+            textBox17.Clear();
         }
 
         private void ViewFlight_TxtBox_TextChanged(object sender, EventArgs e)
@@ -209,6 +226,7 @@ namespace FInal_Project
         {
             coord.removeFlight(int.Parse(textBox18.Text));
             label23.Text = "Flight " + textBox18.Text + " successfuly deleted.";
+            textBox18.Clear();
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -229,6 +247,7 @@ namespace FInal_Project
         private void button6_Click(object sender, EventArgs e) // View Booking Submit
         {
             ViewBookingBox.Text = coord.viewBooking(int.Parse(textBox9.Text));
+            textBox9.Clear();
         }
 
         private void ViewBookingBox_TextChanged(object sender, EventArgs e)
@@ -241,6 +260,9 @@ namespace FInal_Project
             if (coord.addCustomer(textBox2.Text, textBox3.Text, textBox4.Text) == true)
             {
                 AddCustomerConfirm.Text = $"Customer {textBox2.Text} {textBox3.Text} added.";
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
             }
             else
             {
@@ -265,6 +287,7 @@ namespace FInal_Project
             {
                 coord.removeCustomer(int.Parse(textBox6.Text));
                 deleteConfirm.Text = "User successfully deleted";
+                textBox6.Clear();
             }
             else
             {
