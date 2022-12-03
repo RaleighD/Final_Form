@@ -120,6 +120,11 @@ namespace FInal_Project
         {
             return cusMan.viewCustomers();
         }
+
+        public string viewCustomer(int id)
+        {
+            return cusMan.viewCustomer(id);
+        }
     }
     
 }

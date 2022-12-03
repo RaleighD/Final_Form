@@ -104,6 +104,16 @@ namespace FInal_Project
         }
 
         public string viewCustomer(int id)
+        {
+            for (int i = 0; i < numCustomers; i++)
+                {
+                    if (customerList[i].getID() == id)
+                    {
+                        return customerList[i].ToString();
+                    }
+                }
+            return null;
+        }
 
     }
 }
