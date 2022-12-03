@@ -80,15 +80,20 @@ namespace FInal_Project
             return false;
         }
 
-        public bool addFlight(string flightNum, string date, string origin, string destination, string aircraft, int capacity, int duration)
+        public bool addFlight(string flightNum, string date, string origin, string destination, string aircraft, int capacity,int duration)
         {
-            if (numFlights < maxFlights && verifyUnique(flightSeed))
+            if (flightNum != null && date != null && origin != null && destination != null && aircraft != null && capacity != null && duration != null)
             {
 
-                flightList[numFlights] = new Flight(flightSeed, flightNum, date, origin, destination, aircraft, capacity, duration);
-                numFlights++;
-                flightSeed++;
-                return true;
+                if (numFlights < maxFlights && verifyUnique(flightSeed))
+                {
+
+                    flightList[numFlights] = new Flight(flightSeed, flightNum, date, origin, destination, aircraft, capacity, duration);
+                    numFlights++;
+                    flightSeed++;
+                    return true;
+                }
+                return false;
             }
             return false;
         }

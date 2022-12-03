@@ -30,7 +30,7 @@ namespace FInal_Project
             this.aircraft = aircraft;
             this.capacity = capacity;
             this.duration = duration;
-            manifest = new Customer[capacity];
+            manifest = new Customer[(capacity)];
             numPassengers = 0;
         }
 

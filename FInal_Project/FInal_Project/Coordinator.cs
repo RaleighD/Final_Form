@@ -19,6 +19,20 @@ namespace FInal_Project
             this.flightMan = flightMan;
         }
 
+        public bool checkInt(int i)
+        {
+            string iStr = i.ToString();
+            bool iIsNum = int.TryParse(iStr, out i);
+            if (i != null && iIsNum)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public bool addCustomer(string firstName, string lastName, string phoneNum)
         {
             if (firstName != null && lastName != null && phoneNum != null)
@@ -31,16 +45,35 @@ namespace FInal_Project
 
         public bool addBooking(int customerID, int flightID)
         {
-            Customer c = cusMan.search(customerID);
-            Flight f = flightMan.search(flightID);
-            bookMan.addBooking(c, f);
-            return true;
+            
+            if (checkInt(customerID) && checkInt(flightID))
+            {
+                Customer c = cusMan.search(customerID);
+                Flight f = flightMan.search(flightID);
+                bookMan.addBooking(c, f);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool addFlight(string flightNum, string date, string origin, string destination, string aircraft, int capacity, int duration)
         {
-            flightMan.addFlight(flightNum, date, origin, destination, aircraft, capacity, duration);
-            return true;
+            if (capacity != null && duration != null)
+            {
+                
+                if (flightNum != null && date != null && origin != null && destination != null && aircraft != null && checkInt(capacity) && checkInt(duration))
+                {
+                    flightMan.addFlight(flightNum, date, origin, destination, aircraft, capacity, duration);
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            } return false;
         }
 
         public bool removeCustomer(int id)
@@ -59,7 +92,7 @@ namespace FInal_Project
         {
             return flightMan.viewFlights();
         }
-        
+
         public string viewFlight(int flightID)
         {
             return flightMan.viewFlight(flightID);
@@ -77,7 +110,6 @@ namespace FInal_Project
             }
             return false;
         }
-        
 
         public string viewBookings()
         {
@@ -89,4 +121,5 @@ namespace FInal_Project
             return cusMan.viewCustomers();
         }
     }
+    
 }
